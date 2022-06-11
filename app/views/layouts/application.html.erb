@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Movies Marvel</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+<br><br>
+  <body>
+    <div>
+        <button><%= link_to 'Log in', destroy_user_session_path, method: :delete, class: "up" %></button>
+        <button><%= link_to 'Sign up', new_user_registration_path, class: "up" %></button> 
+    </div>
+    
+    <%= yield %>
+  </body>
+</html>

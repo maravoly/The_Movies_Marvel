@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+  <div class="title">
+    <h1>THE MOVIES MARVEL!!</h1>
+    <a target="_blank" class="white-mode"></a>
+      <div>
+        <%= image_tag "https://res.cloudinary.com/maravoly/image/upload/v1654801828/marvel/Cronologi%CC%81a_zlx5fy.jpg", class: "img-thumbnail" %>   
+        <%= image_tag "https://res.cloudinary.com/maravoly/image/upload/v1654918237/marvel/puntos_nqoshp.png", class: "punto" %> 
+      </div> 
+  </div>
+
+<div class="col-md-z">
+    <% if user_signed_in? %>
+      <% @tv_shows.each do |tv_show| %> 
+        <div class="col-md-y">
+          <div class="col-md-w">
+            <div class="col-md-x">
+              <%= image_tag tv_show.image_url%>    
+              <p class="tx"><%= tv_show.name %></p>
+              <p class="sumary"><%= tv_show.summary %></p>
+              <p class="date"><%= tv_show.release_date.strftime("%Y") %></p>
+              <p><%= image_tag(url_for(tv_show.nationality.flag_img)) %></p>
+           </div>  
+          </div> 
+          <div class="col-md-v">
+            <% if user_signed_in? %>
+              <button><%= link_to 'Show', tv_show, class: "up" %></button>
+            <% end %>
+                <% if (user_signed_in? && (current_user == tv_show.user)) %>
+                  <button><%= link_to 'Edit', edit_tv_show_path(tv_show), class: "up" %></button>
+                  <button><%= link_to 'Destroy', tv_show, method: :delete, data: { confirm: 'Are you sure?' }, class: "up" %></button></div>
+                  <% elsif user_signed_in? && current_user.admin? %>
+                  <p><%= link_to 'Destroy', tv_show, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+                  <% end %>
+                <% end %>               
+    <% end %>    
+          </div>  
+        </div> 
+        
+  <div>
+    <% if user_signed_in? %>
+      <button><%= link_to 'New Movie', new_tv_show_path, class: "up" %></button>
+    <% end %>
+  </div>
+  

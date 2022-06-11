@@ -1,0 +1,12 @@
+<br><br><br>
+
+<div>
+<button><%= link_to 'Home', tv_shows_path%></button>
+</div>
+
+<div class="New_movies">
+    <h1  class="titulo" style="width:700px">New Movies</h1><br>
+    <h3>A New Film Enters</h3>
+    <%= render 'form', tv_show: @tv_show %>
+</div>
+

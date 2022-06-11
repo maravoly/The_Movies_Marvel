@@ -1,0 +1,91 @@
+.sign-up{
+    width: 500px;
+    height: 700px;
+    padding-top: 1rem;
+    background-color: #fff;
+    font-family: "Lato", sans-serif;
+    display: table-cell;
+    text-align: center;
+    -webkit-box-shadow: 0 0 9px 2px rgba(0,0,0,0.5) inset, 0 4px 9px 13px rgba(0,0,0,0.2) ;
+    box-shadow: 0 0 9px 2px rgba(0,0,0,0.5) inset, 0 4px 9px 13px rgba(0,0,0,0.2) ;
+    -webkit-transition: color 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 10ms;
+    -moz-transition: color 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 10ms;
+    -o-transition: color 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 10ms;
+    transition: color 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 10ms;
+    background-image: url('https://res.cloudinary.com/maravoly/image/upload/v1654824028/marvel/fondo_vdgx0k.jpg');
+}
+.login-main-text{
+    width: 300px;
+    height: 700px;
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+    background-color: black;
+    display: table-cell;
+    background-image: url('https://res.cloudinary.com/maravoly/image/upload/v1654821939/marvel/marvel_t31yty.png');
+}
+
+.tx{
+    font-size: 1em;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.up{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+button {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	background: #6dd6d1;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px 10px 25px #57aba7, 0px -10px 25px #a6fffa, inset 0px -5px 10px #57aba7, inset 0px 5px 10px #a6fffa;
+	font-family: 'Damion', cursive;
+	color: white;
+	font-size: 20px;
+	transition: 500ms;
+}
+
+button:hover {
+	border: 2px solid #6dd6d1;
+	animation: hueRotation 2s linear infinite;
+}
+
+@keyframes hueRotation {
+	to {filter: hue-rotate(360deg);}
+}
+
+button:focus {
+	outline: none;
+}
+
+.New_movies{
+    width: 500px;
+    height: 700px;
+    padding-top: 1rem;
+    background-color: #fff;
+    font-family: "Lato", sans-serif;
+    display: table-cell;
+    text-align: center;
+    -webkit-box-shadow: 0 0 9px 2px rgba(0,0,0,0.5) inset, 0 4px 9px 13px rgba(0,0,0,0.2) ;
+    box-shadow: 0 0 9px 2px rgba(0,0,0,0.5) inset, 0 4px 9px 13px rgba(0,0,0,0.2) ;
+    -webkit-transition: color 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 10ms;
+    -moz-transition: color 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 10ms;
+    -o-transition: color 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 10ms;
+    transition: color 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 10ms;
+    background-image: url('https://res.cloudinary.com/maravoly/image/upload/v1654954972/marvel/fondo_3_pbom7y.png');
+}
+
+.z{
+    width: 700px;
+    text-align:start;
+}

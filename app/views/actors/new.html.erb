@@ -1,0 +1,34 @@
+<!--app/views/actors/new.html.erb-->
+<div>
+<button><%= link_to 'Home', tv_shows_path%></button>
+</div>
+<div class="New_movies z">
+<h1 class="titulo">Add Actors to Movies</h1>
+
+<%= form_with(model:[@tv_show, @actor]) do |form| %>
+    <div class="field">
+        <%= form.label :first_name, :class=>"tx" %>
+        <%= form.text_field :first_name, :class=>"fondo" %>
+    </div>
+
+    <div class="field">
+        <%= form.label :last_name, :class=>"tx" %>
+        <%= form.text_field :last_name, :class=>"fondo" %>
+    </div>
+
+    <div class="field">
+        <%= form.label :age, :class=>"tx" %>
+        <%= form.number_field :age, :class=>"fondo" %>
+    </div>
+
+    <div class="field">
+        <%= form.label :image, :class=>"tx" %>
+        <%= form.file_field :image, :class=>"fondo"%>
+    </div>
+
+    <br>
+    <div class= "up">
+        <%= form.submit%>
+    </div>
+<% end %>
+ </div>
